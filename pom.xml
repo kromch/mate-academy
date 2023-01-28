@@ -2,27 +2,22 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>root</groupId>
    <version>1.0</version>
+   <properties>
+      <maven.compiler.source>19</maven.compiler.source>
+      <maven.compiler.target>19</maven.compiler.target>
+   </properties>
    <artifactId>project</artifactId>
    <packaging>pom</packaging>
    <name>project</name>
    <modules>
       <module>projects</module>
-      <module>primary-source</module>
-      <module>servlets</module>
-      <module>ejbs</module>
-      <module>ear</module>
-      <module>site</module>
    </modules>
    <build>
       <pluginManagement>
          <plugins>
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
-               <artifactId>maven-site-plugin</artifactId>
-               <configuration>
-                  <unzipCommand>/usr/bin/unzip -o > err.txt</unzipCommand>
-               </configuration>
-            </plugin>
+               <artifactId>maven-site-plugin</artifactId>            </plugin>
          </plugins>
       </pluginManagement>
    </build>
